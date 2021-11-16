@@ -23,6 +23,6 @@ class NotFoundException extends ResponseStatusException {
 
 class ConflictException extends ResponseStatusException {
     public ConflictException() {
-        super(HttpStatus.BAD_REQUEST, "409 Conflict");
+        super(HttpStatus.CONFLICT, "409 Conflict");
     }
 }
